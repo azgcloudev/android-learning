@@ -24,6 +24,25 @@ public class Operators {
 
 
         // relational operators
-        
+        /* ********
+         *  --- RELATIONAL OPERATOR ---
+         *   ! is NOT
+         *   = is assigment
+         *   == is comparison
+         *  < is less than
+         *  > is greater than
+         *  <= is less than or equal
+         *  >= is greater than or equal
+         **********/
+
+
+        /// if statements
+        if (a == b) { // if the evaluation is true the run code block
+            System.out.println("Running...");
+        } else if (!true) {
+            // evaluates if a is not true
+        } else {
+            System.out.println("Keep running.");
+        }
     }
 }
