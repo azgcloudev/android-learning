@@ -44,5 +44,41 @@ public class Operators {
         } else {
             System.out.println("Keep running.");
         }
+
+
+
+        // logical operator
+        /// operator AND
+        int age = 18;
+        boolean isCitizen = true;
+        boolean notAFelon = false;
+
+        // All the conditions must be true
+        if (age >= 18 && isCitizen && notAFelon) {
+            System.out.println("Can vote");
+        } else {
+            System.out.println("Can't vote");
+        }
+
+
+        // operator OR
+           boolean isSnowing = false;
+
+        // at least one condition must be true
+        if ( a > b || isSnowing == false) {
+            System.out.println("True sentence");
+        } else {
+            System.out.println("false sentence");
+        }
+
+        // operator NOT
+        // returns the reverse value of the logical expression
+        boolean isFUnny = true;
+
+        if (!isFUnny) { // since isFUnny = true, the not resverse it to false
+            System.out.println("Not funny");
+        } else {
+            System.out.println("Funny");
+        }
     }
 }
