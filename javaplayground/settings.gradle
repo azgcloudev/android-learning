@@ -16,3 +16,5 @@ rootProject.name = "Java Playground"
 include ':app'
 include ':LearnJava'
 include ':AtmExercise'
+include ':Challange1Section7'
+include ':IntroToOOP'
