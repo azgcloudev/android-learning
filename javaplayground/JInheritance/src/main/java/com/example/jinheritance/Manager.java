@@ -12,4 +12,17 @@ public class Manager extends Employee {
         return this.profile;
     }
 
+
+
+    // override super class methods
+    @Override
+    public double getSalary() {
+        return super.getSalary() + 300000;
+    }
+
+    @Override
+    public int getId() {
+        return super.getId() + 500;
+    }
+
 }

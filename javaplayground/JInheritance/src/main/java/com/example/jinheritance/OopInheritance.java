@@ -18,7 +18,10 @@ public class OopInheritance {
         Manager jose = new Manager();
         jose.setProfile("ANP");
         jose.setFirstName("Jose");
+        jose.setId(54);
+        jose.setSalary(100000);
         System.out.println(jose.getFirstName());
+        System.out.println(jose.getFirstName() + " salary is " + jose.getSalary() + ", and the ID is " + jose.getId());
 
         Employee antonio = new Employee("Antonio", "Zamora");
     }
