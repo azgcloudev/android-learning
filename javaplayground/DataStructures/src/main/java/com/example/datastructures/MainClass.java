@@ -1,6 +1,7 @@
 package com.example.datastructures;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainClass {
 
@@ -66,6 +67,22 @@ public class MainClass {
         // arrays as method parameters
         int[] arrNums = {1, 2, 3, 4, 56, 3456, 324, 675, 32, 342, 1, 3467, 78, 34, 2345, 7};
         findMultThree(arrNums);
+
+
+        // sort arrays
+        // need to import java.util.Arrays
+        int[] unorderedArr = {12,45,1,523,6,134,6};
+
+        System.out.println("\nBefore sort");
+        for (int i = 0; i < unorderedArr.length; i++) {
+            System.out.print(unorderedArr[i] + " ");
+        }
+
+        System.out.println("\nAfter sort:");
+        Arrays.sort(unorderedArr);
+        for (int i = 0; i < unorderedArr.length; i++) {
+            System.out.print(unorderedArr[i] + " ");
+        }
     }
 
 
