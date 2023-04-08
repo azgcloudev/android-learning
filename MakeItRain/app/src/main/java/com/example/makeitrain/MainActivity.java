@@ -1,6 +1,7 @@
 package com.example.makeitrain;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.icu.text.NumberFormat;
 import android.os.Bundle;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView moneyValue;
     private int moneyCounter = 0;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,14 +29,21 @@ public class MainActivity extends AppCompatActivity {
 
         buttonMakeItRain = findViewById(R.id.btnMakeItRain);
         moneyValue = findViewById(R.id.moneyValue);
+        final ConstraintLayout constraintLayout;
+        constraintLayout = findViewById(R.id.constraintId);
 
+        // button to increase money
         buttonMakeItRain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
 
-                moneyCounter += 21;
+                moneyCounter += 500;
+
+                if ( moneyCounter >= 20000) {
+                    constraintLayout.setBackgroundResource(R.color.money_full);
+                }
                 moneyValue.setText(String.valueOf(numberFormat.format(moneyCounter)));
                 // log messages in android studio
                 Log.d("MainActivity", "onClick: Make it rain " + moneyCounter);
