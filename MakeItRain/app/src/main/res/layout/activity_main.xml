@@ -5,7 +5,7 @@
     android:id="@+id/constraintId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF8F00"
+    android:background="#FFFFFC"
     tools:context=".MainActivity">
 
     <TextView
@@ -23,8 +23,8 @@
 
     <TextView
         android:id="@+id/moneyValue"
-        android:layout_width="157dp"
-        android:layout_height="53dp"
+        android:layout_width="354dp"
+        android:layout_height="78dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/money"
         android:textSize="34sp"
@@ -41,6 +41,7 @@
         android:id="@+id/btnMakeItRain"
         android:layout_width="160dp"
         android:layout_height="52dp"
+        android:backgroundTint="#6750A4"
         android:gravity="center"
         android:text="@string/make_it_rain"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,9 +57,11 @@
         android:id="@+id/btnShowInfo"
         android:layout_width="160dp"
         android:layout_height="52dp"
+        android:backgroundTint="#EADDFF"
         android:gravity="center"
         android:onClick="showInfo"
         android:text="@string/show_info"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

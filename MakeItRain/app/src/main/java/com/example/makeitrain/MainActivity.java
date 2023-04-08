@@ -3,6 +3,7 @@ package com.example.makeitrain;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.graphics.Color;
 import android.icu.text.NumberFormat;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         buttonMakeItRain = findViewById(R.id.btnMakeItRain);
         moneyValue = findViewById(R.id.moneyValue);
-        final ConstraintLayout constraintLayout;
-        constraintLayout = findViewById(R.id.constraintId);
 
         // button to increase money
         buttonMakeItRain.setOnClickListener(new View.OnClickListener() {
@@ -41,9 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
                 moneyCounter += 500;
 
-                if ( moneyCounter >= 20000) {
-                    constraintLayout.setBackgroundResource(R.color.money_full);
+                if (moneyCounter >= 20000) {
+                    moneyValue.setTextColor(Color.parseColor("#96be25"));
                 }
+
                 moneyValue.setText(String.valueOf(numberFormat.format(moneyCounter)));
                 // log messages in android studio
                 Log.d("MainActivity", "onClick: Make it rain " + moneyCounter);
