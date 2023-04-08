@@ -2,6 +2,7 @@ package com.example.makeitrain;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 
 import android.graphics.Color;
 import android.icu.text.NumberFormat;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 moneyCounter += 500;
 
                 if (moneyCounter >= 20000) {
-                    moneyValue.setTextColor(Color.parseColor("#96be25"));
+                    moneyValue.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.money_full));
                 }
 
                 moneyValue.setText(String.valueOf(numberFormat.format(moneyCounter)));
