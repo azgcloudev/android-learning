@@ -8,6 +8,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,5 +47,25 @@ public class MainActivity extends AppCompatActivity {
     //    public void showMoney(View view) {
     //        Log.d("MainActivity", "onClick: Make it rain" );
     //    }
+
+
+    // show info button
+    public void showInfo(View view) {
+
+//        // Toast
+//        Toast.makeText(MainActivity.this, R.string.app_info, Toast.LENGTH_SHORT)
+//                .show();
+
+        // Snackbar
+        Snackbar.make(moneyValue, R.string.app_info, Snackbar.LENGTH_SHORT)
+                // add more button in the snack bar
+                .setAction("More", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Log.d("SnackBar", "More clicked");
+                    }
+                })
+                .show();
+    }
 
 }
