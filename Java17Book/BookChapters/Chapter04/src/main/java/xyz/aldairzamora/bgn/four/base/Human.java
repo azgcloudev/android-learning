@@ -36,4 +36,11 @@ public class Human {
     public void setHeight(float height) {
         this.height = height;
     }
+
+
+    // METHODS
+    public int computeAndPrintttl() {
+        int ttl = LIFESPAN - this.age;
+        return ttl;
+    }
 }

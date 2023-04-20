@@ -23,5 +23,8 @@ public class BasicHumanDemo {
         System.out.println(aldair.LIFESPAN);
         System.out.println(Human.LIFESPAN);
 
+        // calling an object method
+        int timeToLive = aldair.computeAndPrintttl();
+        System.out.println("Time to live: " + timeToLive);
     }
 }
