@@ -7,13 +7,21 @@ public class BasicHumanDemo {
         // instantiate an object from a class
         Human aldair = new Human();
         //field currently have default values
-        System.out.println(aldair.name);
-        System.out.println(aldair.age);
-        System.out.println(aldair.height);
+        System.out.println(aldair.getName());
+        System.out.println(aldair.getAge());
+        System.out.println(aldair.getHeight());
+
+        // set values using the setters method
+        aldair.setAge(27);
+        aldair.setName("Aldair");
+        aldair.setHeight(1.72F);
+        System.out.println("name: " + aldair.getName());
+        System.out.println("age: " + aldair.getAge());
+        System.out.println("height: " + aldair.getHeight());
 
         // local variable holds the value
         System.out.println(aldair.LIFESPAN);
         System.out.println(Human.LIFESPAN);
-        
+
     }
 }
