@@ -26,5 +26,8 @@ public class BasicHumanDemo {
         // calling an object method
         int timeToLive = aldair.computeAndPrintttl();
         System.out.println("Time to live: " + timeToLive);
+
+        // Initialize a new instance with a constructor with parameters
+        Human antonio = new Human("Antonio", 27, 1.73F);
     }
 }

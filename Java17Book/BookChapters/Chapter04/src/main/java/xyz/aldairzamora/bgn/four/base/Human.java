@@ -10,6 +10,39 @@ public class Human {
     private int age;
     private float height;
 
+    // CONSTRUCTORS
+
+    /**
+     * Default constructor with no parameters
+     * @return
+     */
+        public Human() { }
+
+    // use different parameters
+    /**
+     * Constructs a Human instance initialized with the given parameters
+     * @param name - the name of the Human instance
+     * @param age - the age of the Human instance
+     */
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    /**
+     * Constructs a Human instance  initialized  with the given parameters.
+     * @param name - the name for the Human instance
+     * @param age - the age for the Human instance
+     * @param height - the height for the Human instance
+     */
+    public Human(String name, int age, float height) {
+        this(name, age); // to avoid rewriting the statement, is already in the previous constructor
+        this.height = height;
+    }
+
+
+
+
 
     // ENCAPSULATION using getters and setters
     // local variables must be the private
