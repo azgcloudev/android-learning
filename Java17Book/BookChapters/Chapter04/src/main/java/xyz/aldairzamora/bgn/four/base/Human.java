@@ -1,5 +1,7 @@
 package xyz.aldairzamora.bgn.four.base;
 
+import xyz.aldairzamora.bgn.four.classes.Gender;
+
 public abstract class Human { // setting the class as abstract
 
     // LOCAL VARIABLES
@@ -10,6 +12,8 @@ public abstract class Human { // setting the class as abstract
     private String name;
     private int age;
     private float height;
+    private Gender gender;
+
 
     // CONSTRUCTORS
 
@@ -30,6 +34,11 @@ public abstract class Human { // setting the class as abstract
         this.age = age;
     }
 
+    public Human(String name, int age, Gender gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
     /**
      * Constructs a Human instance  initialized  with the given parameters.
      * @param name - the name for the Human instance
@@ -71,6 +80,13 @@ public abstract class Human { // setting the class as abstract
         this.height = height;
     }
 
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
 
     // METHODS
     public int computeAndPrintttl() {

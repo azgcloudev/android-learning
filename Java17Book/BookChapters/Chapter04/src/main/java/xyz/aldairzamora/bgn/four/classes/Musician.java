@@ -1,5 +1,8 @@
 package xyz.aldairzamora.bgn.four.classes;
 
+import xyz.aldairzamora.bgn.four.base.Human;
+import java.util.List;
+
 public class Musician extends Human {
     private String musicSchool;
     private String genre;
