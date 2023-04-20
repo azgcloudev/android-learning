@@ -1,9 +1,10 @@
 package xyz.aldairzamora.bgn.four.base;
 
-public class Human {
+public abstract class Human { // setting the class as abstract
 
     // LOCAL VARIABLES
-    static final int LIFESPAN = 100; // final declares the variable as constant
+    //making LIFESPAN public to be abstract in this class
+    public static final int LIFESPAN = 100; // final declares the variable as constant
 
     // FIELDS (properties)
     private String name;
